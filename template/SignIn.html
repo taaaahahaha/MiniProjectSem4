@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="static/LogIn.css" />
+  <script src="https://use.fontawesome.com/1688e58a77.js"></script>
+
+  <title>Login Page</title>
+</head>
+
+<body>
+  <div class="left_container" style="padding-right: 50px">
+    <h1 style="color: rgb(177, 7, 7);font-family: inherit; font-size:45px;margin-top:0px;margin-bottom:0px"><b>Join
+        Somaiya Labs</b></h1>
+    <img src="static/Picture1.png" style="height:280px; width:400px ">
+  </div>
+  <div class="cointainer">
+    <div class="right" style="  margin-left: 50px;">
+      <div class="login">
+        <h4 style="margin-right: 70px;"> LOGIN</h4>
+        <form action="/signin" method="POST">
+          <div class="text-box">
+            <i class="fa fa-envelope"></i>
+            <input type="email" name="email" id="email" placeholder="Email" required autocomplete="none"
+              style="width:310px" class="email">
+          </div>
+          <div class="text-box">
+            <i class="fa fa-lock"></i>
+            <input type="password" name="password" id="password" placeholder="Password" required autocomplete="none"
+              style="width:310px" class="pass">
+          </div>
+          <button class="css-button-sliding-to-left--red">Login</button>
+        </form>
+        <span class="forget"> <a href="forgotpassword" target="_blank" style="margin-right: 50px;"> Forgot Password
+            ?</a></span><br /><br /><br /><br />
+        <span><a href="signup" style="margin-right: 50px;" target="_blank">Don't have an account ? <i
+              class="fa fa-arrow-right"></i></a></span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

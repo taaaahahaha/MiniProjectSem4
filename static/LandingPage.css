@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+/* ============================Nav-bar=========================== */
+nav{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/* =/=/=/=/=/=/ login button /=/==/=/==//=/= */
+.css-button-sliding-to-left--red {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #a80707;
+    color: #a80707;
+  }
+  .css-button-sliding-to-left--red:hover {
+    color: #fff;
+  }
+  .css-button-sliding-to-left--red:hover:after {
+    width: 100%;
+  }
+  .css-button-sliding-to-left--red:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.1s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #a80707;
+  }
+
+#navbarNavAltMarkup{
+    justify-content: flex-end;
+    align-self: auto;
+}
+
+div a{
+    display: flex;
+    align-items: center;
+}
+
+/* =======Virtual-lab-page============= */
+.col-md-4{
+    background-color: white;
+    padding: 2%;
+     
+}
+.col-md-4 h2{
+    font-family: 'Dongle', sans-serif;
+    text-align: left;
+    font-weight: 700;
+    font-size: 5.5rem;
+    color: #3a3a3a;   
+}
+.col-md-4 p{
+    text-align: left;
+    font-family: 'Dongle', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.quickTOLab a{
+    text-decoration: none;
+}
+.quickTOLab h3{
+    text-align: left;
+}
+
+.css-button-fully-rounded--red {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #a80707;
+    background: #a80707;
+  }
+  .css-button-fully-rounded--red:hover {
+    background: #fff;
+    color: #a80707;
+  }
+
+/* ===================side-box================== */
+.col-md-8 div{
+    margin: 0 auto;
+    width: 95%;
+    height: 70%;  
+}
+
+.red{
+    background-color: #a72429;   
+    transform: rotate(-7.11deg) translateY(25%) translateX(15%); 
+    border-radius: 2%;
+}
+.gray{
+    background-color: #D4DAE5;
+    transform: rotate(8deg) translateY(-78%) translateX(10%);
+    border-radius: 2%;
+}
+.photo img{
+    width: 95%;
+    height:95%;
+    border-radius: 2%;
+    transform: translateY(-185%) translateX(16.5%);
+}
+
+/* =================Your Virtual Lab - Features================== */
+#features-heading{
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    font-family: 'Dongle', sans-serif;
+}
+
+h5{
+    color: #990606;
+    font-weight: 700;
+    font-size: medium;
+}
+
+p{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-style: normal;
+line-height: 33px;
+display: flex;
+align-items: center;
+text-align: center;
+}
+
+img{
+    width: 63px;
+    height: 67px;
+}
+
+.col-4{
+    padding: 15px;
+    margin: 5% 2.5% 0  2.5%;
+    text-align: center;
+    background: rgba(138, 139, 168, 0.3);
+    border-radius: 62px;
+    box-shadow: 2px 2px rgb(182, 180, 180);
+    font-size: 1.4rem;
+}
+
+.row{
+    padding: 10px 20px 10px 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+/* ======================= FOOTER ==================== */
+footer{
+    margin-top: 5%;
+    background-color: #D4DAE5;
+    bottom: auto;
+}
+
+footer .col{
+    box-shadow: none;
+    background-color:#D4DAE5;
+    font-weight: 620;
+}

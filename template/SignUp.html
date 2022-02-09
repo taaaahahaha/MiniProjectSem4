@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    div {
+      margin: 8px;
+      padding: 8px;
+    }
+
+    span {
+      font-size: 0.8rem;
+      color: #a80707;
+    }
+
+    .left_container {
+      position: relative;
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-bottom: 100px;
+      padding-top: 130px;
+    }
+
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+    form {
+      background: rgba(255, 255, 255, 0.06);
+      padding: 3em;
+      padding-top: 2em;
+      height: 28rem;
+      border-radius: 20px;
+      background: -webkit-linear-gradient(to right, #fff, #fad9d9);
+      background: linear-gradient(to right, #fad9d9, #fff);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      position: relative;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+    }
+
+    form p {
+      font-weight: 500;
+      color: #000000;
+      opacity: 0.7;
+      font-size: 1.9rem;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      padding: 0 0 0 0px;
+      font-family: ui-rounded;
+      font-size-adjust: auto;
+    }
+
+    form a {
+      text-decoration: none;
+      color: #a80707;
+      font-size: 1em;
+      margin-top: 2px;
+    }
+
+    form a:hover {
+      text-shadow: 2px 2px 6px #00000040;
+    }
+
+    form a:active {
+      text-shadow: none
+    }
+
+    form input {
+      width: 200px;
+      padding: 0.8em;
+      margin-bottom: 0.5rem;
+      border: none;
+      border-right: 1px solid #000000;
+      border-bottom: 1px solid #000000;
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      color: rgb(102, 94, 94);
+      font-weight: 500;
+      font-family: 'Montserrat', sans-serif;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      border-radius: 5000px;
+    }
+
+    .css-button-sliding-to-left--red {
+      position: absolute;
+      min-width: 130px;
+      height: 40px;
+      color: #fff;
+      padding: 5px 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+      outline: none;
+      border-radius: 20px;
+      z-index: 0;
+      background: #fff;
+      overflow: hidden;
+      border: 2px solid #a80707;
+      color: #a80707;
+    }
+
+    .css-button-sliding-to-left--red:hover {
+      color: #fff;
+    }
+
+    .css-button-sliding-to-left--red:hover:after {
+      width: 100%;
+    }
+
+    .css-button-sliding-to-left--red:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      transition: all 0.1s ease;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 100%;
+      background: #a80707;
+    }
+
+    form:hover {
+      margin: 4px;
+    }
+
+    a,
+    input:focus,
+    button:focus,
+    select:focus {
+      outline: none;
+    }
+
+    .drop {
+      background: rgba(255, 255, 255, 0.06);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      border-left: 1px solid rgba(255, 255, 255, 0.3);
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+
+    .drop-2 {
+      height: 80px;
+      width: 80px;
+      bottom: -30px;
+      right: -10px;
+    }
+
+    .drop-3 {
+      height: 100px;
+      width: 100px;
+      bottom: 120px;
+      right: -50px;
+      z-index: -1;
+    }
+
+    .drop-4 {
+      height: 120px;
+      width: 120px;
+      top: -60px;
+      right: -60px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="left_container">
+    <h1 style="color:rgb(189, 0, 0);font-family: inherit; font-size:45px;margin-top:0px;margin-bottom:0px"><b>Join
+        Somaiya Labs</b></h1>
+    <p><b>Dive into the</b> <b style="color:rgb(189, 0, 0);font-family: inherit;font-size:30px"> Virtual</b>
+    <p>
+    <p><b>World of</b> <b style="color:rgb(189, 0, 0);font-family: inherit;font-size:30px"> Physics</b></p>
+    <img src="static/Picture1.png" style="height:280px; width:400px">
+  </div>
+  <div class="container">
+    <form action="/signup" method="POST" onsubmit="return validation()"
+      style="padding-bottom: 75px;padding-top:20px;padding-left:75px;padding-right:75px; margin-left: 450px;">
+      <p><b>Welcome</b></p>
+      <div>
+        <input type="email" placeholder="Email" id="email" name="email" required><span id="email_err"></span>
+      </div>
+      <div>
+        <input type="text" placeholder="Institute" id="inst" name="institute" required><span id="inst_err"></span>
+      </div>
+      <div>
+        <input type="text" placeholder="Department" id="dep" name="department" required><span id="dep_err"></span>
+        <!-- <select name="dep" id="dep" required>
+        <option selected disabled value="Select">Select</option>
+        <option value="Computer Engineering"></option>
+        <option value="Electrical Engineering"></option>
+        <option value="IT"></option>
+        <option value="EXTC"></option>
+      </select><br> -->
+      </div>
+      <div>
+        <input type="password" placeholder="Password" id="pass" name="password" required><span id="pass_err"></span>
+      </div>
+      <div>
+        <input type="password" placeholder="Confirm Password" id="cpass" required><span id="cpass_err"></span>
+      </div>
+      <button type="submit" class="css-button-sliding-to-left--red">Sign Up</button><br>
+      <div class="loginbox-v4__footer" style="font-size: 0.8rem;">
+        Already have an account?
+        <a class="sign-link" href="signin" target="_blank" data-purpose="login-link-signup-popup">
+          Log In
+        </a>
+      </div>
+    </form>
+    <div class="drops">
+      <div class="drop drop-2"></div>
+      <div class="drop drop-3"></div>
+      <div class="drop drop-4"></div>
+    </div>
+  </div>
+  <script>
+    //  Fuction for checking validations
+    function validation() {
+      //  Creating variables 
+      var email = document.getElementById('email').value;
+      var inst = document.getElementById('inst').value;
+      var dep = document.getElementById('dep').value;
+      var pass = document.getElementById('pass').value;
+      var cpass = document.getElementById('cpass').value;
+      // Validations for email
+      // var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      // if (email.match(validRegex)) {
+      //   return true;
+      // }
+      // else {
+      //   document.getElementById('email_err').innerHTML = "*Invalid email address!";
+      //   return false;
+      // }
+
+      // Validations for institute
+      if (inst.length < 3 || inst.length > 30) {
+        document.getElementById('inst_err').innerHTML = "*Must be 3 to 30 characters long!";
+        return false;
+      }
+      if (!isNaN(inst)) {
+        document.getElementById('inst_err').innerHTML = "*Only characters allowed!";
+        return false;
+      }
+
+      // Validations for department
+      if (dep.length < 3 || dep.length > 30) {
+        document.getElementById('dep_err').innerHTML = "*Must be 3 to 30 characters long!";
+        return false;
+      }
+      if (!isNaN(dep)) {
+        document.getElementById('dep_err').innerHTML = "*Only characters allowed!";
+        return false;
+      }
+
+      // Validations for password
+      if (pass.length < 8) {
+        document.getElementById('pass_err').innerHTML = "*Password must not be less than 8 characters!";
+        return false;
+      }
+      // Validation for confirm password
+      if (cpass != pass) {
+        document.getElementById('cpass_err').innerHTML = "*Passwords must be same!";
+        return false;
+      }
+    }
+  </script>
+
+</body>
+
+</html>
