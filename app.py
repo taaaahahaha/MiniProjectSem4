@@ -31,8 +31,8 @@ global OTP
 
 app = Flask(__name__,template_folder='template',static_folder='static')
 
-# Temporary Cluster id=taaham password=123
-cluster = MongoClient("mongodb+srv://taaham:123@cluster0.imuxc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+# Temporary 
+cluster = MongoClient(YOUR_KEY)
 db = cluster["VirtualLabs-SanjeevSir"]
 collection = db["Userid-passwords"]
 
