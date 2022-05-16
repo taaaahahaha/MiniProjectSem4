@@ -28,6 +28,8 @@ global institute
 global department
 global password
 global OTP
+global session
+session = False
 
 app = Flask(__name__,template_folder='template',static_folder='static')
 
@@ -44,7 +46,7 @@ def random_string():
     return str(res)
 
 
-# BulkMailCode
+# BulkMailCode  - https://www.google.com/settings/security/lesssecureapps - ON
 def mail(reciever_list):
     email_send = [reciever_list]  
     email_user = 'Vlabs.KJSIEIT@gmail.com' 
@@ -69,6 +71,8 @@ def mail(reciever_list):
 # Landing Page
 @app.route('/', methods=['GET', 'POST'])
 def landingpage():
+    global session
+    session = False
     return render_template('LandingPage.html')
 
 
@@ -87,20 +91,48 @@ def signin():
         results = collection.find_one({'email':email})
         if results == None:
             print("Email not Registered")
-            return render_template('ERROR_EmailNotRegistered.html')
+            return render_template('SignIn.html', message='Email Not Registered')
 
         elif results["password"] != password:
             print("Wrong Password")
-            return render_template('ERROR_WrongPassword.html')
+            return render_template('SignIn.html', message='Wrong Password')
 
         else:
-            return render_template('VirtualLab.html') #Vlabpage
+            # return render_template('dashboard.html', log) #Vlabpage
+            global session
+            session = True
+            return redirect('/experiments') #Vlabpage
         
         
         return render_template('LandingPage.html')
 
 
     return render_template('SignIn.html')
+
+
+# Dashboard - Experiments
+@app.route('/experiments', methods=['GET', 'POST'])
+def dashboard():
+    global session
+    if session:
+        return render_template('dashboard.html',session=True)
+    else:
+        return render_template('SignIn.html', session=False, message="You need to be Logged In")
+
+
+# Logout
+@app.route('/logout', methods=['GET', 'POST'])
+def logout():
+    global session
+    session = False
+    return redirect('/')
+
+  #About
+@app.route('/about', methods=['GET', 'POST'])
+def about():
+    return render_template('About.html')
+
+
 
 # Verify OTP
 @app.route('/verify', methods=['GET', 'POST'])
@@ -122,10 +154,10 @@ def verify():
                             "password":password
                         }
             )
-            return render_template('signin.html')
+            return render_template('SignIn.html', message="Sucessfully Registered")
         else:
             print("Wrong OTP")
-            return render_template('ERROR_WRONGOTP.html')
+            return render_template('SignIn.html', message="Wrong OTP Provided")
 
     
     OTP = random_string()
@@ -158,9 +190,10 @@ def signup():
 
         else:
             print("Email already in Use!!")
+            return render_template('SignIn.html',message="Email Already in use.")
 
         
-        return render_template('SignIn.html')
+        return render_template('SignIn.html', message="Sucessfully Registered")
 
 
     return render_template('SignUp.html')
@@ -182,7 +215,7 @@ def forgotpassword():
         # newpassword = str(request.form['newpassword'])
         results = collection.find_one({'email':email})
         if results == None:
-            return render_template('ERROR_EmailNotRegistered.html')
+            return render_template('SignIn.html', message="Email Not Registered.")
 
         else:
             return redirect('verifyforgottenpassword') 
@@ -221,7 +254,7 @@ def verifyforgottenpassword():
             return render_template('NewPassword.html')
         else:
             print("Wrong OTP")
-            return render_template('ERROR_WRONGOTP.html')
+            return render_template('SignIn.html', message="Wrong OTP")
 
     
     OTP = random_string()
@@ -229,7 +262,43 @@ def verifyforgottenpassword():
     return render_template('Verify_ForgottenPassword.html')
 
 
+# Verify OTP
+@app.route('/<string:exp>', methods=['GET', 'POST'])
+def exps(exp):
+    global session
+
+    if session==False:
+        return render_template('SignIn.html',message="You need to LogIn")
+
+    if exp=='pnjunction':
+        return render_template('Exp1_PNJunction.html')
+
+    elif exp=='ledplank':
+        return render_template('Exp2_ledplank.html')
+
+    elif exp=='energygap':
+        return render_template('Exp4_energygap.html')
+
+    elif exp=='photodiode':
+        return render_template('Exp3_photodiode.html')
+
+    elif exp=='zener':
+        return render_template('Exp5_zenerStatic.html')
+
+    elif exp=='ssd':
+        return render_template('Exp6_ssd.html')
+
+
+    return render_template('Verify_ForgottenPassword.html')
+
+
+
+
+
+
+
+
 
 if __name__ == "__main__":
-    app.secret_key = "xyz" 
-    app.run(debug=True)
+  app.secret_key = "xyz" 
+  app.run(debug=True)

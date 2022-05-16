@@ -5,22 +5,30 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="static/LogIn.css" />
+  <link rel="icon" href="static/landingpagestatic/Somaiya Logo.png" type = "image/x-icon">
+  <link rel="stylesheet" href="static/landingpagestatic/LogIn.css" />
   <script src="https://use.fontawesome.com/1688e58a77.js"></script>
 
   <title>Login Page</title>
 </head>
 
 <body>
+
+ 
+
+  
+
   <div class="left_container" style="padding-right: 50px">
     <h1 style="color: rgb(177, 7, 7);font-family: inherit; font-size:45px;margin-top:0px;margin-bottom:0px"><b>Join
         Somaiya Labs</b></h1>
-    <img src="static/Picture1.png" style="height:280px; width:400px ">
+    <img src="static/landingpagestatic/Picture1.png" style="height:280px; width:400px ">
   </div>
   <div class="cointainer">
     <div class="right" style="  margin-left: 50px;">
       <div class="login">
-        <h4 style="margin-right: 70px;"> LOGIN</h4>
+        <div style="margin-right: 70px;" >
+        <h4 > LOGIN</h4>
+      </div>
         <form action="/signin" method="POST">
           <div class="text-box">
             <i class="fa fa-envelope"></i>
@@ -34,9 +42,14 @@
           </div>
           <button class="css-button-sliding-to-left--red">Login</button>
         </form>
-        <span class="forget"> <a href="forgotpassword" target="_blank" style="margin-right: 50px;"> Forgot Password
-            ?</a></span><br /><br /><br /><br />
-        <span><a href="signup" style="margin-right: 50px;" target="_blank">Don't have an account ? <i
+        <span class="forget"> <a href="forgotpassword" style="margin-right: 50px;"> Forgot Password?</a></span> 
+
+        
+        <br>
+        <span class="forget"> <a href="#" style="margin-right: 50px;"> {{message}}</a></span>
+       
+            <br /><br /><br />
+        <span><a href="signup" style="margin-right: 50px;" >Don't have an account ? <i
               class="fa fa-arrow-right"></i></a></span>
       </div>
     </div>

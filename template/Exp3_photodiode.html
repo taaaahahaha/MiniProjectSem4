@@ -1,0 +1,314 @@
+<html>
+<head>
+  <link rel="stylesheet" href="static/photodiodeStatic/css/style.css">
+  <link rel="icon" href="static/photodiodeStatic/assets/photodiode_png/Somaiya Logo.png" type = "image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="static/photodiodeStatic/js/script.js">
+  </script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <title>I V Characteristics of a photodiode</title>
+</head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-9">
+        <strong><h3>KJ Somaiya Institute of Engineering and Information Technology</h3></strong>
+		</div>
+        <div class="col-sm-3"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Theory')" id="defaultOpen">Theory</button>
+        <button class="tablinks" onclick="openCity(event, 'Procedure')">Procedure</button>
+        <button class="tablinks" onclick="openCity(event, 'MCQs')">MCQs</button>
+        <button class="tablinks" onclick="openCity(event, 'Simulation')" >Simulation</button>
+        <button class="tablinks" onclick="openCity(event, 'Observation')">Observation</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="Theory" class="tabcontent"><br>
+        <h3>Theory</h3>
+        <p>A PN junction diode is photo-sensitive in reverse bias condition. i.e. The reverse current in a photodiode depends on the intensity of light falling on it or exposure of light. A special type of PN junction device that generates current when exposed to light is known as Photodiode. It is also known as photo detector or photo sensor. It operates in reverse biased mode and converts light energy into electrical energy.
+        <br>
+        </p>
+        <img src='static/photodiodeStatic/assets/photodiode_png/photodiode_theory.png' class="img-fluid theory_img rounded mx-auto d-block">
+        <p>
+          <br>
+          Working of a Photodiode is based on the phenomenon called electron-hole pair generation. In a photodiode, when light is made incident on reverse biased p-n junction, more electron-hole pairs are generated. This increases the reverse current. Photodiode is used only in reverse bias mode.
+When there is no light falling on the photo diode, the reverse saturation current is normally limited to a few microamperes. It is solely due to thermally generated minority carriers in n-type and p-type material. It is call as dark current.
+          <br>
+          Application of light to the junction will result in more number of electrons jumping from valence band to conduction band utilizing the light energy. Due to this, more number of electrons in p-side conduction band and more number of holes in n-side valence band are created. This increase in number of minority carriers result in increased level of reverse saturation current. As the reverse current is proportional to the intensity of light incident on the photo diode, it can be used for the measurement of intensity of ambient light. This can be used in many applications such as smartphones, laptops where we need to sense the ambient light intensity to adjust the bright ness of the screen.
+          <br>
+
+        </p>
+      </div>
+      
+      <div id="Procedure" class="tabcontent"><br>
+        <h3>Procedure</h3>
+        <p>
+          <ol>
+            <li>Keep the LED OFF.</li>
+            <li>Switch on the circuit.</li>
+	<li>Vary the voltage in steps of 0.2 Volts and measure the current through the photo-diode.</li>
+<li>Find the dark current from these readings.</li>
+<li>Now, switch ON the LED and make the light to fall on the photo-diode.</li>
+<li>Keep LED Power equal 10mW.</li>
+<li>Vary the voltage in steps of 0.2 Volts and measure the current through the photo-diode.</li>
+<li>Repeat step 7 for LED Power equal to 20mW, 30mW and 40mW.</li>
+<li>Plot the IV Characteristics of photo-diode</li>
+          </ol>
+          </p>
+      </div>
+      
+      <div id="MCQs" class="tabcontent"><br>
+        <h3>MCQs</h3>
+        <p><br>1.	A Semiconductor PN Junction device which converts light energy into ________ energy.
+<br>a.	Mechanical
+<br>b.	Electrical
+<br>c.	Heat
+<br>d.	Sound
+
+<br></br>2. According to the quantum theory, light consists of small energy packets which are called ________.
+<br>a.	Proton
+<br>b.	Photon
+<br>c.	krypton
+<br>d.	All are correct
+</p>
+      </div>
+
+      <div id="Observation" class="tabcontent"><br>
+        <h3>Observation</h3>
+	<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col" style="text-align:center">Sr.No.</th>
+      <th scope="col" style="text-align:center">Diode<br>Voltage<br>V<sub>D</sub> Volts</th>
+      <th scope="col" style="text-align:center">LED OFF<br>P<sub>LED</sub> = 0 mW <br>Current (I) \[{\mu}A\]</th>
+		<th scope="col" style="text-align:center">LED OFF<br>P<sub>LED</sub> = 10 mW <br>Current (I) \[{\mu}A\]</th>
+		<th scope="col" style="text-align:center">LED OFF<br>P<sub>LED</sub> = 20 mW <br>Current (I) \[{\mu}A\]</th>
+		<th scope="col" style="text-align:center">LED OFF<br>P<sub>LED</sub> = 30 mW <br>Current (I) \[{\mu}A\]</th>
+		<th scope="col" style="text-align:center">LED OFF<br>P<sub>LED</sub> = 40 mW <br>Current (I) \[{\mu}A\]</th>
+    </tr>
+  </thead>
+  <tbody>
+      <th scope="row" style="text-align:center">1</th>
+      <td style="text-align:center">0</td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+    <td></td>
+	  <td></td>
+    </tr>
+    <tr>
+      <th scope="row" style="text-align:center">2</th>
+      <td style="text-align:center">-0.2</td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+    </tr>
+	<tr>
+      <th scope="row" style="text-align:center">3</th>
+      <td style="text-align:center">-0.4</td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+    </tr>
+	<tr>
+      <th scope="row" style="text-align:center">4</th>
+      <td style="text-align:center">-0.6</td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+    </tr>
+	<tr>
+      <th scope="row" style="text-align:center">5</th>
+      <td style="text-align:center">-0.8</td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+    </tr>
+	<tr>
+      <th scope="row" style="text-align:center">6</th>
+      <td style="text-align:center">-1.0</td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+    </tr>
+	<tr>
+      <th scope="row" style="text-align:center">7</th>
+      <td style="text-align:center">-1.2</td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+    </tr>
+	<tr>
+      <th scope="row" style="text-align:center">8</th>
+      <td style="text-align:center">-1.4</td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+    </tr>
+	<tr>
+      <th scope="row" style="text-align:center">9</th>
+      <td style="text-align:center">-1.6</td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+    </tr>
+	<tr>
+      <th scope="row" style="text-align:center">10</th>
+      <td style="text-align:center">-1.8</td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+    </tr>
+	<tr>
+      <th scope="row" style="text-align:center">11</th>
+      <td style="text-align:center">-2.0</td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+    </tr>
+	<tr>
+      <th scope="row" style="text-align:center">12</th>
+      <td style="text-align:center">-2.2</td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+    </tr>
+	  <tr>
+      <th scope="row" style="text-align:center">13</th>
+      <td style="text-align:center">-2.4</td>
+		  <td></td>
+		  <td></td>
+		  <td></td>
+		  <td></td>
+		  <td></td>
+    </tr>
+	<tr>
+      <th scope="row" style="text-align:center">14</th>
+      <td style="text-align:center">-2.6</td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+    </tr>
+	<tr>
+      <th scope="row" style="text-align:center">15</th>
+      <td style="text-align:center">-2.8</td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+    </tr>
+	<tr>
+      <th scope="row" style="text-align:center">16</th>
+      <td style="text-align:center">-3.0</td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+    </tr>
+	<tr>
+      <th scope="row" style="text-align:center">17</th>
+      <td style="text-align:center">-4.0</td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+    </tr>
+	<tr>
+      <th scope="row" style="text-align:center">18</th>
+      <td style="text-align:center">-5.0</td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+	  <td></td>
+    </tr>
+  </tbody>
+</table>
+<!-- 		  table end -->
+      </div>
+
+
+        <div id="Simulation" class="container tabcontent">
+              <table>
+                <tr>
+                  <td>
+                      <p><h1><center>I V Characteristics of a photodiode</center></h1>
+                      <p><center><input type="button" class="btn btn-secondary" id = "led" value = "Switch On the LED" onclick="led_on()"/></center>
+                      <p><center>Select LED Power : <select name="led_watt"  class="form-select"id="led_watt" onchange="showLED(this.value)" disabled>
+                                          <option value="0">0 mW</option>
+                                          <option value="10">10 mW</option>
+                                          <option value="20">20 mW</option>
+                                          <option value="30">30 mW</option>
+                                          <option value="40">40 mW</option>
+                                        </select></center>
+                      <p><center><input type="button" class="btn btn-secondary" id = "ckt_status" value = "Switch On the Circuit" onclick="ckt_on()"/></center>
+                      <p>
+                        <div class="slidecontainer"><center>
+                            <div> <h3><center>Change the Reverse Bias Voltage across the photodiode</center></h3></div>
+                            <div id=slider1>
+                                <input type="range" id="v1Value" min="0" max="5" value="0" step="0.2" onchange="showCurrent(this.value)" class = "slider" disabled>
+                            </div>
+                                    <div id="initialLValue">0</div>
+                        </center></div>
+
+                    </td>
+                    <td>
+                      <div class="container">
+                        <img id="photoexpt" src="static/photodiodeStatic/assets/photodiode_png/photodiode.png" style="width:100%;">
+                        <div class="current-block">
+                             <input type="text" id="current" value="000" maxlength="3" size="3" disabled>
+                        </div>
+                        <div class="voltage-block">
+                            <input type="text" id="voltage" value="000" maxlength="3" size="3" disabled>
+                        </div>
+                        <img id="led_disp" style="position: absolute; top: 300px; left: 600px;" src="static/photodiodeStatic/assets/photodiode_png/0mW.png"/>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+          </center>
+        <footer>
+<img src='static/photodiodeStatic/assets/photodiode_png/st.png' id='logost'/>
+            <img src='static/photodiodeStatic/assets/photodiode_png/somaiya logo.png' id='logo'/>
+            <p id='best'>Best Viewed in Chrome with 100% zoom</p>
+      </footer>
+  </body>
+</html>

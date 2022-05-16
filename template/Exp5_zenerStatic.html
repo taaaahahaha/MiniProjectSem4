@@ -1,0 +1,109 @@
+<html>
+<head>
+  <link rel="stylesheet" href="static/zenerStatic/css/style.css">
+  <link rel="icon" href="static/zenerStatic/assets/zener_png/Somaiya Logo.png" type = "image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="static/zenerStatic/js/script.js"></script>
+  <title>I V Characteristics of a Zener Diode</title>
+</head>
+
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-9">
+        <strong><h3>KJ Somaiya Institute of Engineering and Information Technology</h3></strong>
+		</div>
+        <div class="col-sm-3"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Theory')" id="defaultOpen">Theory</button>
+        <button class="tablinks" onclick="openCity(event, 'Procedure')">Procedure</button>
+        <button class="tablinks" onclick="openCity(event, 'MCQs')">MCQs</button>
+        <button class="tablinks" onclick="openCity(event, 'Simulation')" >Simulation</button>
+        <button class="tablinks" onclick="openCity(event, 'Observation')">Observation</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="Theory" class="tabcontent"><br>
+        <h3>Theory</h3>
+        <p>Description</p>
+      </div>
+      
+      <div id="Procedure" class="tabcontent"><br>
+        <h3>Procedure</h3>
+        <p>Description</p>
+      </div>
+      
+      <div id="MCQs" class="tabcontent"><br>
+        <h3>MCQs</h3>
+        <p>Description</p>
+      </div>
+
+      <div id="Observation" class="tabcontent"><br>
+        <h3>Observation</h3>
+        <p>Description</p>
+      </div>
+
+
+        <div id="Simulation" class="container tabcontent">
+              <table>
+                <tr>
+                  <td>
+                      <p><h1><center>I V Characteristics of a Zener Diode</center></h1>
+                        <p><center>Select Zener Diode : <select name="diode" class="form-select" id="diode" onchange="showDIODE(this.value)" >
+                                            <option value="1N4733A">1N4733A   "5.1V"</option>
+                                            <option value="1N4736A">1N4736A   "6.8V"</option>
+                                            </select></center>
+                      <p><center>Select Biasing Method : <select name="bias" id="bias" onchange="showBIAS(this.value)" class="form-select">
+                                          <option value="forward">Forward Biasing</option>
+                                          <option value="reverse">Reverse Biasing</option>
+                                          </select></center>
+                      <p><center><input type="button" id = "ckt_status" class="btn btn-secondary" value = "Switch ON the Circuit" onclick="ckt_on()"/></center>
+                      <p>
+                        <div class="slidecontainer"><center>
+                            <div> <h3><center>Change the Voltage across the Zener diode using slider</center></h3></div>
+                            <div id=slider1>
+                                <input type="range" id="v1Value" min="0" max="1.6" value="0" step="0.1" onchange="showCurrent(this.value)" class = "slider" />
+                            </div>
+                                    <div id="initialLValue">0</div>
+                        </center></div>
+                    </td>
+                    <td>
+                      <div class="container">
+                        <img id="zenerexpt" src="static/zenerStatic/assets/zener_png/zener_forward_off.png" style="width:780px;"/>
+                        <div class="current-block">
+                              <div id="current">0.00 mA</div>
+
+                        </div>
+                        <div class="voltage-block">
+                            <div id="volt">0.00 V</div>
+                        </div>
+                        <div class="line-block">
+                            <img id="line" src="static/zenerStatic/assets/zener_png/line.png" width = "4" height = "250"/>
+                        </div>
+
+                            <img id="arrow" src="static/zenerStatic/assets/zener_png/arrow.png" style = "position: absolute; top: 390px; left: 233px;"/>
+
+
+                        </div>
+
+                    </td>
+                  </tr>
+                </table>
+              </div>
+          </center>
+    <footer>
+      <img src='st.png' id='logost'/>
+            <img src='static/zenerStatic/assets/zener_png/somaiya logo.png' id='logo'/>
+            <p id='best'>Best Viewed in Chrome with 100% zoom</p>
+      </footer>
+  </body>
+</html>

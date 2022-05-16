@@ -1,0 +1,379 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="static/led_planck_Static/css/style.css">
+  <link rel="icon" href="static/led_planck_Static/assets/led_png/Somaiya Logo.png" type = "image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="static/led_planck_Static/js/script.js"></script>
+  <title>Forward characteristics of LED and Determination of Planck's Constant</title>
+</head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-9">
+        <strong><h3>KJ Somaiya Institute of Engineering and Information Technology</h3></strong>
+		</div>
+        <div class="col-sm-3"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Theory')" id="defaultOpen">Theory</button>
+        <button class="tablinks" onclick="openCity(event, 'Procedure')">Procedure</button>
+        <button class="tablinks" onclick="openCity(event, 'MCQs')">MCQs</button>
+        <button class="tablinks" onclick="openCity(event, 'Simulation')" >Simulation</button>
+        <button class="tablinks" onclick="openCity(event, 'Observation')">Observation</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="Theory" class="tabcontent"><br>
+        <h3>LED Characteristics and Planck's Constant</h3>
+        <p>Max Planck in 1900 introduced Planck's constant <q>h</q> to explain radiation law according to which, radiation is emitted, transmitted or absorbed in discrete energy packets (quanta) determined by Planck's constant and frequency of radiation. Energy E of each quanta or photon is given by <b>E=hv</b> where 'v' is frequency of radiation.
+<br></br>
+LEDs are p-n junctions made up of suitable materials that emit spontaneous radiation when forward biased. The energy supplied to the LED can be written as a sum of radiative energy and non radiative energy. Suppose V<sub>0</sub> is the minimum voltage required for the emission of light then we can write &#8722 
+<br></br>
+        \[eV_{o} = \frac{hc}{\lambda} + \psi\]
+<!-- eV<sub>0</sub>=hc/&#955+ &#936
+<br></br> -->
+here h is the Planck's constant, &#955 is the wavelength of light emitted, e is the electronic charge, c is the speed of light and  <div>
+		  <div class="formula">
+                  \[\psi\]
+                  </div> represents non radiative losses. 
+              <div class="formula"> </div>
+<br></br>
+Assuming non radiative losses to be very small we can write &#8722
+<br></br>
+\[V_{o}=\frac{hc}{e} (\frac{1}{&#955})\]
+<br></br>
+  <div>
+Therefore we can plot graph between V<sub>0</sub>  vs  
+          <div class="formula">
+          \[\frac{1}{&#955}\]
+          </div>
+    for different LEDs and from the slope= (hc/e), we can get the value of Planck's constant as h=  e/c &#215 slope
+  </div>
+  <br>
+  <b>CIRCUIT DIAGRAM :</b>
+  </p>                                                    
+        <img src='static/led_planck_Static/assets/led_png/led_p_ckt.png' class="img-fluid theory_img rounded mx-auto d-block" width="500" height="600">
+        <p>
+        <br></br>
+</p>
+</div>
+      </div>
+      
+      <div id="Procedure" class="tabcontent"><br>
+        <h3>LED Characteristics and Planck's Constant</h3>
+        <ol>
+            <li>Select the colour of LED as Red from the drop down list.</li>
+	          <li>Select the biasing Method as Forward Biasing of diode from the drop down list.</li>
+	          <li>Switch on the circuit by clicking the button provided.</li>
+	<li>You can change the voltage using the slider.</li>
+	<li>You can notice the corresponding ammeter ID and voltmeter VD readings.</li>
+	<li>Repeat step no. 1-5 for LEDs of Yellow, Green and Blue colour.</li>
+	<li>Plot a curve between diode voltage VD and diode current ID for all LEDs.</li>
+	<li>Find the barrier potential V<sub>0</sub> for all LEDs and from this curve.</li>
+	<li><div>Plot the graph of barrier potential V<sub>0</sub>  vs  
+     <div class="formula">
+          \[\frac{1}{&#955}\]
+          </div>
+    where  &#955 is the given wavelength of light emitted by each LED.
+    </div></li>
+	<li>Calculate the Planck's constant using slope of the graph.</li>
+          
+        </ol>	
+</p>
+      </div>
+      
+      <div id="MCQs" class="tabcontent"><br>
+        <h3>LED Characteristics and Planck's Constant</h3>
+        <p>1.	 What should be the biasing of the LED?
+<br>a) Forward bias
+<br>b) Reverse bias
+<br>c) Forward bias than Reverse bias
+<br>d) No biasing required
+<br></br>2.	Which process of the Electron-hole pair is responsible for emitting of light?
+<br>a) Generation
+<br>b) Movement
+<br>c) Recombination
+<br>d) Diffusion
+</p>
+      </div>
+
+      <div id="Observation" class="tabcontent"><br>
+        <h3>LED Characteristics and Planck's Constant</h3>
+        <p>Given : 
+
+<br>Wavelength of Red LED = <u>6950 A</u><sup>0</sup>
+<br> Wavelength of Yellow LED =<u> 5900 A</u><sup>0</sup>
+	 <br>Wavelength of Green LED =<u> 5700 A</u><sup>0</sup>
+	 <br>Wavelength of Blue LED = <u>4720 A</u><sup>0</sup>
+        </p>
+
+<br></br><b>Table 1 : For Forward Characteristics of semiconductor Diode</b>
+        <br>
+        <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col" style="text-align:center"> </th>
+      <th scope="col" colspan = "2" style="text-align:center">RED LED</th>
+      <th scope="col" colspan = "2" style="text-align:center">YELLOW LED</th>
+            <th scope="col" colspan = "2" style="text-align:center">GREEN LED</th>
+            <th scope="col" colspan = "2" style="text-align:center">BLUE LED</th>
+    </tr>
+        <tr>
+      <th scope="row" style="text-align:center">Sr. No.</th>
+    <th scope="row" style="text-align:center">Diode  Voltge <br>V<sub>D</sub> volts</th>
+          <th scope="row" style="text-align:center">Diode  Current <br>I<sub>D</sub> mA</th>
+          <th scope="row" style="text-align:center">Diode  Voltge <br>V<sub>D</sub> volts</th>
+          <th scope="row" style="text-align:center">Diode  Current <br>I<sub>D</sub> mA</th>
+          <th scope="row" style="text-align:center">Diode  Voltge <br>V<sub>D</sub> volts</th>
+          <th scope="row" style="text-align:center">Diode  Current <br>I<sub>D</sub> mA</th>
+          <th scope="row" style="text-align:center">Diode  Voltge <br>V<sub>D</sub> volts</th>
+          <th scope="row" style="text-align:center">Diode  Current <br>I<sub>D</sub> mA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" style="text-align:center">1</th>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <th scope="row" style="text-align:center">2</th>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+	<tr>
+      <th scope="row" style="text-align:center">3</th>
+      <td> </td>
+      <td> </td>
+    <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">4</th>
+      <td> </td>
+      <td> </td>
+    <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">5</th>
+      <td> </td>
+      <td> </td>
+    <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">6</th>
+      <td> </td>
+      <td> </td>
+    <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">7</th>
+      <td> </td>
+      <td> </td>
+    <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">8</th>
+      <td> </td>
+      <td> </td>
+    <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">9</th>
+       <td> </td>
+      <td> </td>
+    <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">10</th>
+       <td> </td>
+      <td> </td>
+    <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+  </tr>
+  </tbody>
+</table>
+<br>
+        <b>Table 2 : Barrier voltages from forward characteristics :</b>
+        <br>
+        <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col" style="text-align:center">Sr.No.</th>
+      <th scope="col" style="text-align:center">LED Colour</th>
+      <th scope="col" style="text-align:center">Wavelength <br> (Given) <br> &#955 in A<sup>0</sup></th>
+      <th scope="col" style="text-align:center">Wavelength <br> &#955 in m </th>
+      <th scope="col" style="text-align:center">Barrier <br> Potential <br> V<sub>0</sub> in volts</th>
+      <th scope="col" style="text-align:center">\[\frac{1}{&#955}\] <br> in (/m)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" style="text-align:center">1</th>
+      <td>Red </td>
+      <td>6950 </td>
+      <td> </td>
+      <td> </td>      
+      <td> </td>
+    </tr>
+    <tr>
+      <th scope="row" style="text-align:center">2</th>
+      <td>Yellow </td>
+      <td>5900 </td>
+      <td> </td>
+      <td> </td>      
+      <td> </td>
+    </tr>
+    <tr>
+      <th scope="row" style="text-align:center">3</th>
+      <td>Green </td>
+      <td>5700 </td>
+      <td> </td>
+      <td> </td>      
+      <td> </td>
+    </tr>
+	<tr>
+      <th scope="row" style="text-align:center">4</th>
+      <td>Blue </td>
+      <td>4720 </td>
+      <td> </td>
+      <td> </td>      
+      <td> </td>
+  </tr>
+  </tbody>
+</table>   
+	<br>
+          <b>GRAPH 1 :</b>
+  </p>                                                    
+        <img src='static/led_planck_Static/assets/led_png/led_p_g1.png' class="img-fluid theory_img rounded mx-auto d-block" width="500" height="600">
+        <p>
+          <b>GRAPH 2 :</b>
+  </p>                                                    
+        <img src='static/led_planck_Static/assets/led_png/led_p_g2.png'class="img-fluid theory_img rounded mx-auto d-block" width="500" height="600">
+        <p>
+          <br></br>
+</p>
+      </div>
+
+
+        <div id="Simulation" class="container tabcontent">
+              <table>
+                <tr>
+                  <td>
+                      <p><h1><center>Forward characteristics of LED and Determination of Planck's Constant</center></h1>
+                        <p><center>Select Diode : <select name="diode" class="form-select" id="diode" onchange="showDIODE(this.value)">
+                                            <option value="ledred"> RED Colour LED </option>
+                                            <option value="ledyellow">YELLOW Colour LED</option>
+											<option value="ledgreen">GREEN Colour LED</option>
+											<option value="ledblue">BLUE Colour LED</option>
+                                            </select></center>
+                      
+                      <p><center><input type="button" class="btn btn-secondary" id = "ckt_status" value = "Switch ON the Circuit" onclick="ckt_on()"/></center>
+                      <p>
+                        <div class="slidecontainer"><center>
+                            <div> <h3><center>Change the Voltage across the LED using slider</center></h3></div>
+                            <div id=slider1>
+                                <input type="range" id="v1Value" min="0" max="11" value="0" step="1" onchange="showCurrent(this.value)" class = "slider" disabled/>
+                            </div>
+                        <div id="initialLValue">0</div>
+                        </center></div>
+
+                    
+                    </td>
+                    <td>
+                      <div class="container">
+                        <img id="ledexpt" src="static/led_planck_Static/assets/led_png/ledoff.png" style="width:780px;"/>
+                        <div class="current-block">
+                              <div id="current">000.0 mA</div>
+
+                        </div>
+                        <div class="voltage-block">
+                            <div id="volt">0.0 V</div>
+                        </div>
+                        <div class="line-block">
+                            <img id="line" src="static/led_planck_Static/assets/led_png/line.png" width = "4" height = "250"/>
+                        </div>
+						
+						<div class="diode-block">
+                            <img id="diode_disp" src="static/led_planck_Static/assets/led_png/redled.png"/>
+                        </div>
+
+                            <img id="arrow" src="static/led_planck_Static/assets/led_png/arrow.png" style = "position: absolute; top: 390px; left: 233px;"/>
+
+
+                        </div>
+
+                    </td>
+                  </tr>
+                </table>
+              </div>
+          </center>
+            
+    </div>
+    <footer>
+      <img src='static/led_planck_Static/assets/led_png/st.png' id='logost'/>
+            <img src='static/led_planck_Static/assets/led_png/somaiya logo.png' id='logo'/>
+            <p id='best'>Best Viewed in Chrome with 100% zoom</p>
+      </footer>
+  </body>
+</html>

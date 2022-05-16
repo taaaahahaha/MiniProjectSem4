@@ -1,0 +1,400 @@
+<html>
+
+<head>
+  
+  <link rel="stylesheet" href="static/pnjunctionstatic/css/style.css">
+  
+  <link rel="icon" href="static/pnjunctionstatic/assets/pn_junction_png/Somaiya Logo.png" type = "image/x-icon">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+<link rel="preconnect" href="https://fonts.gstatic.com">
+  
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="static/pnjunctionstatic/js/script.js"></script>
+  
+  <title>I V Characteristics of a p-n junction diode</title>
+</head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-9">
+        <strong><h3>KJ Somaiya Institute of Engineering and Information Technology</h3></strong>
+		</div>
+        <div class="col-sm-3"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Theory')" id="defaultOpen">Theory</button>
+        <button class="tablinks" onclick="openCity(event, 'Procedure')">Procedure</button>
+        <button class="tablinks" onclick="openCity(event, 'MCQs')">MCQs</button>
+        <button class="tablinks" onclick="openCity(event, 'Simulation')" >Simulation</button>
+        <button class="tablinks" onclick="openCity(event, 'Observation')">Observation</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="Theory" class="tabcontent"><br>
+        <h3>I V Characteristics of a p-n junction diode</h3>
+        <p>
+          A diode is an electrical device allowing current to move through it in one direction with far greater ease than in the other. Semiconductor diodes are symbolized in schematic diagrams as shown below-
+        </p>
+        <p>
+        <img src='static/pnjunctionstatic/assets/pn_junction_png/pnj1.png' class="img-fluid theory_img rounded mx-auto d-block">
+        </p>
+        <h4>Forward Bias :</h4>
+        <p>
+          When an external voltage is applied to the p-n junction with the positive terminal connected to the p-region and negative terminal connected to the n-region, the p-n junction is said to be forward biased. 
+        </p>
+        <img src='static/pnjunctionstatic/assets/pn_junction_png/pnj2.png' class=" theory_img rounded mx-auto d-block">
+        <p>
+In forward bias condition, negative terminal of the battery repels the free electrons on the n-side towards the junction. These free electrons recombine with the positive ions present in the depletion layer. Similarly the positive terminal of the battery repels the holes on p-side towards the junction. These holes recombine with the negative ions in the depletion layer. The overall effect of this is reduction of depletion layer width. As the external voltage increases, the depletion layer vanishes and the free electrons from n-side, are attracted towards the positive terminal of the battery and holes from p-side are attracted towards the n-side and the current starts flowing. Thus in forward bias condition, the current flow is due to majority carriers.
+        </p>
+        <h4>Reverse bias :</h4>
+        <p>
+          If p-type semiconductor is connected to the negative terminal of the battery and n-type semiconductor is connected to the positive terminal of the battery, then the p-n junction is said to be reverse biased. This results in increase in barrier potential and hence in barrier height. 
+        </p>
+        <img src='static/pnjunctionstatic/assets/pn_junction_png/pnj5.png' class="img-fluid theory_img rounded mx-auto d-block">
+        <p>
+          The reverse bias pulls the free electrons in the n-region away from the junction towards the positive terminal of the battery. Also, holes are pulled away from the junction towards the negative terminal of the battery. The departing electrons leave more positive ions near the junction and the departing holes leave more negative ions near the junctions. This results in increase in the width of depletion layer. This wider depletion layer does not allow the majority carriers in both regions to cross the junction. Hence, there is no current due to majority carriers.
+        </p>
+        <h4>Forward Characteristics :</h4>
+        <p>
+          When the diode is in forward-biased and the applied voltage is increased from zero, hardly any current flows through the device in the beginning. It is so because the external voltage is being opposed by the internal barrier voltage V<sub>b</sub> whose value is 0.7V for Si and 0.3V for Ge. As soon as V<sub>b</sub> is neutralized, current through the diode increases rapidly with increasing applied supply voltage. It is found that as a little voltage of 1.0V produces a forward current of about 50mA.
+        </p>
+        <h4>Reverse Characteristics :</h4>
+        <p>
+          When the diode is reverse-biased, majority carrier are blocked and only a small current (due to minority carrier) flows through the diode. As the reverse voltage is increased from zero, the reverse current very quickly reaches its maximum or saturation value Io which is also known as leakage current. It is of the order of nano Amperes (nA) and micro Amperes (&mu;A) for Ge. With milli ammeter it will be measured as zero.
+        </p>
+        <h4>CIRCUIT DIAGRAM :</h4>
+        <img src='static/pnjunctionstatic/assets/pn_junction_png/pnj3.png' class="img-fluid theory_img rounded mx-auto d-block"><br>
+        <img src='static/pnjunctionstatic/assets/pn_junction_png/pnj4.png' class="img-fluid theory_img rounded mx-auto d-block">
+      </div>
+      
+      <div id="Procedure" class="tabcontent"><br>
+        <h3>I V Characteristics of a p-n junction diode</h3>
+        <p>
+          <ol>
+            <li>Select the diode from the drop down list.</li>
+            <li>Select the biasing Method as Forward Biasing of diode from the drop down list.</li>
+            <li>Switch on the circuit by clicking the button provided.</li>
+            <li>You can change the voltage using the slider.</li>
+            <li>You can notice the corresponding ammeter and voltmeter readings.</li>
+            <li>Plot a curve between diode voltage V<sub>D</sub> and diode current I<sub>D</sub> as shown in (First quadrant) using suitable scale with the help of observation Table 1. This curve is the required forward characteristics of semiconductor diode. </li>
+            <li>Find the barrier potential V<sub>b</sub> from this curve</li>
+            <li>Select the biasing Method as Reverse Biasing of diode from the drop down list.</li>
+            <li>You can change the voltage using the slider.</li>
+            <li>You can notice the corresponding ammeter (I<sub>D</sub>) and voltmeter (V<sub>D</sub>) readings.</li>
+            <li>Plot a curve between diode voltage V<sub>D</sub> and diode current I<sub>D</sub> as shown in (third quadrant) using suitable scale with the help of observation Table 2. This curve is the required reverse characteristics of semiconductor diode. </li>
+            <li>Comment on the reverse current.</li>
+          </ol>
+</p>
+      </div>
+      
+      <div id="MCQs" class="tabcontent"><br>
+        <h3>I V Characteristics of a p-n junction diode</h3>
+        <p><br>1.	How many junction/s do a diode consist?
+<br>a) 0
+<br>b) 1
+<br>c) 2
+<br>d) 3
+<br></br>2.	If the positive terminal of the battery is connected to the anode of the diode, then it is known as
+<br>a) Forward biased
+<br>b) Reverse biased
+<br>c) Equilibrium
+<br>d) Schottky barrier
+<br></br>3.	During reverse bias, a small current develops known as
+<br>a) Forward current
+<br>b) Reverse current
+<br>c) Reverse saturation current
+<br>d) Active current
+</p>
+      </div>
+
+      <div id="Observation" class="tabcontent"><br>
+        <h3>I V Characteristics of a p-n junction diode</h3>
+        <p><b>Diode Selected : 1N4007 Si diode / 1N270 Ge diode</b>
+         <br></br> Table 1 : For Forward Characteristics of semiconductor Diode:<br>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col" style="text-align:center">Sr.No.</th>
+      <th scope="col" style="text-align:center">Diode Voltage<br>V<sub>D</sub> Volts</th>
+      <th scope="col" style="text-align:center">Diode Current<br>I<sub>D</sub> Volts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" style="text-align:center">1</th>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <th scope="row" style="text-align:center">2</th>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <th scope="row" style="text-align:center">2</th>
+      <td> </td>
+      <td> </td>
+    </tr>
+	<tr>
+      <th scope="row" style="text-align:center">3</th>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">4</th>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">5</th>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">6</th>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">7</th>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">8</th>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">9</th>
+       <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">10</th>
+       <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">11</th>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">12</th>
+    <td> </td>
+      <td> </td>
+    </tr>
+    	<tr>
+      <th scope="row" style="text-align:center">13</th>
+        <td> </td>
+      <td> </td>
+    </tr>
+    	<tr>
+      <th scope="row" style="text-align:center">14</th>
+        <td> </td>
+      <td> </td>
+    </tr>
+    	<tr>
+      <th scope="row" style="text-align:center">15</th>
+        <td> </td>
+      <td> </td>
+    </tr>
+    	<tr>
+      <th scope="row" style="text-align:center">16</th>
+        <td> </td>
+      <td> </td>
+    </tr>
+    	<tr>
+      <th scope="row" style="text-align:center">17</th>
+        <td> </td>
+      <td> </td>
+    </tr>
+    	<tr>
+      <th scope="row" style="text-align:center">18</th>
+        <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+        <br></br>
+        Table 2 : For Reverse Characteristics of semiconductor diode:
+        <br>
+        <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col" style="text-align:center">Sr.No.</th>
+      <th scope="col" style="text-align:center">Diode Voltage<br>V<sub>D</sub> Volts</th>
+      <th scope="col" style="text-align:center">Diode Current<br>I<sub>D</sub> Volts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" style="text-align:center">1</th>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <th scope="row" style="text-align:center">2</th>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <th scope="row" style="text-align:center">2</th>
+      <td> </td>
+      <td> </td>
+    </tr>
+	<tr>
+      <th scope="row" style="text-align:center">3</th>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">4</th>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">5</th>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">6</th>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">7</th>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">8</th>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">9</th>
+       <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">10</th>
+       <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">11</th>
+      <td> </td>
+      <td> </td>
+  </tr>
+	<tr>
+      <th scope="row" style="text-align:center">12</th>
+    <td> </td>
+      <td> </td>
+    </tr>
+    	<tr>
+      <th scope="row" style="text-align:center">13</th>
+        <td> </td>
+      <td> </td>
+    </tr>
+    	<tr>
+      <th scope="row" style="text-align:center">14</th>
+        <td> </td>
+      <td> </td>
+    </tr>
+    	<tr>
+      <th scope="row" style="text-align:center">15</th>
+        <td> </td>
+      <td> </td>
+    </tr>
+    	<tr>
+      <th scope="row" style="text-align:center">16</th>
+        <td> </td>
+      <td> </td>
+    </tr>
+    	<tr>
+      <th scope="row" style="text-align:center">17</th>
+        <td> </td>
+      <td> </td>
+    </tr>
+    	<tr>
+      <th scope="row" style="text-align:center">18</th>
+        <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+        <br></br>
+        </p>
+      </div>
+
+
+        <div id="Simulation" class="container tabcontent">
+              <table>
+                <tr>
+                  <td>
+                      <p><h1><center>I V Characteristics of a p-n junction diode</center></h1>
+                        <p><center>Select Diode : <select name="diode" class="form-select" id="diode" onchange="showDIODE(this.value)">
+                                            <option value="1N4007">1N4007 Si-Diode</option>
+                                            <option value="1N270">1N270 Ge-Diode</option>
+                                            </select></center>
+                      <p><center>Select Biasing Method : <select name="bias" class="form-select" id="bias" onchange="showBIAS(this.value)">
+                                          <option value="forward">Forward Biasing</option>
+                                          <option value="reverse">Reverse Biasing</option>
+                                          </select></center>
+                      <p><center><input type="button" class="btn btn-secondary" id = "ckt_status" value = "Switch ON the Circuit" onclick="ckt_on()"/></center>
+                      </p>
+                        <div class="slidecontainer"><center>
+                            <div><h3><center>Change the Voltage across the p-n junction diode</center></h3></div>
+                            <div id=slider1>
+                                <input type="range" id="v1Value" min="0" max="15" value="0" step="1" onchange="showCurrent(this.value)" class = "slider" disabled/>
+                            </div>
+                            <div id="initialLValue">0</div>
+                        </center>
+                        </div>
+                    </td>
+                    <td>
+                      <div class="container">
+                        <img id="pn_junctionexpt" src="static/pnjunctionstatic/assets/pn_junction_png/forward_off.png" style="width:780px;"/>
+                        <div class="current-block">
+                              <div id="current">000.0 mA</div>
+
+                        </div>
+                        <div class="voltage-block">
+                            <div id="volt">0.0 V</div>
+                        </div>
+                        <div class="line-block">
+                            <img id="line" src="static/pnjunctionstatic/assets/pn_junction_png/line.png" width = "4" height = "250"/>
+                        </div>
+
+                            <img id="arrow" src="static/pnjunctionstatic/assets/pn_junction_png/arrow.png" style = "position: absolute; top: 390px; left: 233px;"/>
+
+
+                        </div>
+
+                    </td>
+                  </tr>
+                </table>
+              </div>
+          </center>   
+    </div>
+    
+    <footer>
+      <img src='static/pnjunctionstatic/assets/pn_junction_png/st.png' id='logost'/>
+            <img src='static/pnjunctionstatic/assets/pn_junction_png/somaiya logo.png' id='logo'/>
+            <p id='best'>Best Viewed in Chrome with 100% zoom</p>
+      </footer>
+    
+  </body>
+</html>
